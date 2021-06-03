@@ -1,0 +1,6 @@
+Bài toán: Từ một tập ảnh về những chiếc lá và nhãn tương ứng là các bệnh của cây mà biểu hiện qua lá
+Nội dung:
++ Nhận vào một tập ảnh gồm 1820 ảnh (tập huấn luyện)
++ Tạo ra một mạng neural phù hợp để huấn luyện
++ Lấy mô hình vừa huấn luyện xong cho tập kiểm tra
+Ý nghĩa: Giúp cho người nông dân nhận biết được các loại bệnh của cây, giúp ngăn chặn lây lan và điều trị hợp lý
