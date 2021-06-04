@@ -1,6 +1,17 @@
 Bài toán: Từ một tập ảnh về những chiếc lá và nhãn tương ứng là các bệnh của cây mà biểu hiện qua lá
 Nội dung:
-+ Nhận vào một tập ảnh (tập huấn luyện)
-+ Tạo ra một mạng neural phù hợp để huấn luyện
-+ Lấy mô hình vừa huấn luyện xong cho tập kiểm tra
+- Nhận vào một tập ảnh (tập huấn luyện)
+- Xem ảnh và đưa ra nhận xét
+- Tạo ra một mạng neural phù hợp để huấn luyện
++ Mạng này gồm có 8 lớp:
+  Lớp convolutional 2D: có 32 kernel kích thước 3x3, hàm kích hoạt relu, kích thước input bằng kích thước ảnh (layer đầu)
+  Lớp max pooling 2D: kích thước 4x4
+  Lớp convolutional 2D: có 64 kernel kích thước 3x3, hàm kích hoạt relu
+  Lớp max pooling 2D: kích thước 4x4
+  Lớp convolutional 2D: có 128 kernel kích thước 3x3, hàm kích hoạt relu
+  Lớp max pooling 2D: kích thước 4x4
+  Lớp flatten: Chuyển tensor thành vector
+  Lớp softmax: Phân lớp, hàm kích hoạt saftmax. Có 4 lớp là: Healthy, Rust, Multiple Diseases, Scab
+  Dùng hàm lỗi categorical_lossentropy, tối ưu bằng adam
+- Lấy mô hình vừa huấn luyện xong cho tập kiểm tra
 Ý nghĩa: Giúp cho người nông dân nhận biết được các loại bệnh của cây, giúp ngăn chặn lây lan và điều trị hợp lý
