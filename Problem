@@ -1,7 +1,12 @@
 Bài toán: Từ một tập ảnh về những chiếc lá và nhãn tương ứng là các bệnh của cây mà biểu hiện qua lá
 Nội dung:
-- Nhận vào một tập ảnh (tập huấn luyện)
-- Xem ảnh và đưa ra nhận xét
+- Nhận vào một tập ảnh
+  Tập dữ liệu gồm 1821 ảnh dùng để huấn luyện (file Train_0.jpg đến file Train_1820.jpg) và 1821 ảnh dùng để kiểm tra (file Test_0.jpg đến file Test_1821.jpg)
+- Xem ảnh và đưa ra nhận xét: Tập dữ liệu được gán nhãn 4 lớp, tương ứng với 4 loại bệnh của cây
+  Scab: Lá bị nhăn, màu vàng nhạt.
+  Rust: Có những đóm vàng trên lá.
+  Multiple_diseases: Lá bị vàng, có những đóm đỏ vàng.
+  Healthy: lá xanh, mướt. (Không có bệnh)
 - Tạo ra một mạng neural phù hợp để huấn luyện
 + Mạng này gồm có 8 lớp:
   Lớp convolutional 2D: có 32 kernel kích thước 3x3, hàm kích hoạt relu, kích thước input bằng kích thước ảnh (layer đầu)
