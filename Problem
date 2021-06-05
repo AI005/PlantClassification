@@ -5,7 +5,7 @@ Nội dung:
 - Xem ảnh và đưa ra nhận xét: Tập dữ liệu được gán nhãn 4 lớp, tương ứng với 4 loại bệnh của cây
   Scab: Lá bị nhăn, màu vàng nhạt.
   Rust: Có những đóm vàng trên lá.
-  Multiple_diseases: Lá bị vàng, có những đóm đỏ vàng.
+  Multiple diseases: Lá bị vàng, có những đóm đỏ vàng.
   Healthy: lá xanh, mướt. (Không có bệnh)
 - Tạo ra một mạng neural phù hợp để huấn luyện
 + Mạng này gồm có 8 lớp:
